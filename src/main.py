@@ -1,4 +1,7 @@
-from src.algorithm import polygon_detection as corner_detect
+from src.algorithm import polygon_detection as polygon_detect
 
-num_logs = corner_detect.count_logs("assets/log_2.jpg")
+img_url = "assets/log_4.jpg"
+num_logs = polygon_detect.detect(img_url)
+
 print(num_logs)
+#polygon_detect.detect_logs(img_url)
